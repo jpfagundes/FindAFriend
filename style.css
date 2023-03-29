@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  width: 100%;
+}
+
+#home {
+  background-color: #F15156;
+  height: 792px
+}
+
+header {
+  background-color: #E44449;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0 20px;
+  padding-top: 52px;
+}
+
+
+.title span {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  margin-left: 3px;
+}
+
+.title img + img {
+  margin-left: -15px
+}
+
+.title h1 {
+  margin: 35px 0;
+  color: #FFF;
+  font-size: 44px;
+  max-width: 280px;
+}
+
+.karamelo {
+  display: flex;
+  gap: 20px
+}
+
+.karamelo .square:first-child {
+  border-radius: 0 20px 20px 0
+}
+
+.karamelo .square:last-child {
+  border-radius: 20px 0 0 20px
+}
+
+.karamelo .square:nth-child(2){
+  background: linear-gradient(153.09deg, #F36A6F 17.23%, #E44449 73.77%);
+}
+
+.karamelo .dog {
+  width: 279px;
+  transform: translateY(-77px);
+}
+
+.square {
+  width: 279px;
+  height: 256px;
+  background-color: #E44449;
+  border-radius: 20px
+}
+
+.square button {
+  background-color: #fff;
+  width: 239px;
+  height: 55px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0D3B66;
+  font-weight: 800;
+  margin: 0 auto;
+  text-decoration: none;
+  border: none;
+  transform: translateY(-150px)
+}
+
+#box-friends {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 20px;
+  margin-top: 70px;
+  align-items: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: rgba(13, 59, 102, 1);
+}
+
+p {
+  font-size: 14px
+}
+
+.box {
+  width: 320px;
+  height: 200px;
+  border-radius: 20px;
+  border: 1px solid rgba(241, 81, 86, 0.3);
+  background: #FDECED;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 25px
+}
