@@ -78,9 +78,8 @@ header {
   border-radius: 20px
 }
 
-button {
+a {
   background-color: #fff;
-  width: 239px;
   height: 55px;
   border-radius: 8px;
   display: flex;
@@ -93,8 +92,9 @@ button {
   border: none;
 }
 
-.square button {
-  transform: translateY(-150px)
+.square a {
+  transform: translateY(-150px);
+  width: 239px;
 }
 
 /* *************** SECTION BOX FRIENDS*************** */
@@ -166,14 +166,14 @@ p {
 /* *************** SECTION CAROUSEL BOX *************** */
 
 #carousel-box {
-  height: 540px;
-  width: 100%;
-  border-radius: 20px;
-  background: #F15156;
-  margin: 0 auto;
-  padding: 32px;
+  padding: 20px;
   overflow: hidden;
+}
 
+.container-carousel {
+  padding: 60px 32px;
+  background: #F15156;
+  border-radius: 20px;
 }
 
 #carousel-box span {
@@ -191,8 +191,6 @@ p {
   gap: 10px;
 }
 
-
-
 h3 {
   font-size: 30px;
   font-weight:700;
@@ -202,27 +200,25 @@ h3 {
 
 }
 
-#carousel-box button {
+#carousel-box a {
   margin: 20px auto 30px auto;
 }
 
 .swiper-slide {
-  width: 256px;
-  height: 174px;
+  min-height: 174px;
   border-radius: 18px;
   background: #fff;
 }
 
 
 #carousel-box img {
-  width: 256px;
-  height: 128px;
+  width: inherit;
 }
 
-#carousel p {
+#carousel-box p {
   font-size: 16px;
   color: #0D3B66;
-  margin-top: 4px;
+  margin-top: 10px;
   text-align: center;
 
 }
