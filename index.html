@@ -16,7 +16,6 @@
   <title>FindAFriend</title>
 
   <link rel="stylesheet" href="style.css">
-  <script src="./script.js" defer></script>
 
 </head>
 <body>
@@ -50,26 +49,69 @@
 
   <section id="box-friends">
     <h2>Um app não, uma caixinha de amigos...</h2>
-    <div class="box">
-      🐕
-      <p>O <strong>FindAFriend</strong> é um produto desenvolvido para você encontrar
-        o animal de estimação ideal ao seu estilo de vida!</p>
+    <div class="animals">
+      <div class="box">
+        <span>🐕</span>
+        <p>O <strong>FindAFriend</strong> é um produto desenvolvido para você encontrar
+          o animal de estimação ideal ao seu estilo de vida!</p>
+      </div>
+
+      <div class="box">
+        <span>🐈</span>
+        <p><strong>ONGs</strong> cadastram os bichinhos disponíveis 
+          para adoção informando características como: porte, nível 
+          de energia, nível de independência, sociabilidade e gênero.</p>
+      </div>
+
+      <div class="box">
+        <span>🦮</span> 
+        <p><strong>Filtre os bichinhos</strong> de acordo com suas preferências e lifestyle. 
+          Depois é só entrar em contato com a ONG para agendar 
+          uma visita e conhecer pessoalmente <strong>match perfeito!</strong></p>
+      </div>
     </div>
 
-    <div class="box">
-      🐈
-      <p><strong>ONGs</strong> cadastram os bichinhos disponíveis 
-        para adoção informando características como: porte, nível 
-        de energia, nível de independência, sociabilidade e gênero.</p>
-    </div>
-
-    <div class="box">
-      🦮
-      <p><strong>Filtre os bichinhos</strong> de acordo com suas preferências e lifestyle. 
-        Depois é só entrar em contato com a ONG para agendar 
-        uma visita e conhecer pessoalmente <strong>match perfeito!</strong></p>
+    <div class="app">
+      <img src="./assets/images/app.svg">
+      <img src="./assets/images/app.svg">
+      <img src="./assets/images/app.svg">
     </div>
   </section>
+
+  <section id="carousel-box">
+    <h3>Há muitos amigos esperando por você!</h3>
+    <span>O FiendAFriend conecta pessoas que estão procurando
+      por um animal de estimação com animais que precisam de um
+      lar amoroso. É fácil de usar e você pode navegar por uma variedade
+      de animais para encontrar aquele que melhor se adapta ao seu estilo 
+      de vida e necessidades.</span>
+
+    <button>Acesse agora</button>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/images/hamilton.png" alt="">
+          <p>Hamilton</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/cleiton.png" alt="">
+          <p>Cleiton</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/aldo.png" alt="">
+          <p>Aldo</p>
+        </div>
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./script.js" ></script>
 
 </body>
 </html>

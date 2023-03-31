@@ -1,12 +1,23 @@
-const openMenuMobile = document.querySelector("#open-menu")
-const closeMenuMobile = document.querySelector("#close-menu")
-const menuMobile = document.querySelector("#navigation")
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
 
-function handleNavigation(){
-    openMenuMobile.classList.toggle('hide');
-    closeMenuMobile.classList.toggle('hide');
-    menuMobile.classList.toggle('opened');
-}
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
-openMenuMobile.addEventListener('click', handleNavigation)
-closeMenuMobile.addEventListener('click', handleNavigation)
+  mousewheel: true,
+  keyboard: true,
+  
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
