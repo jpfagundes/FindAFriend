@@ -1,0 +1,184 @@
+@media (min-width: 800px) {
+
+.btn-menu {
+  display: none;
+}
+
+.nav-desktop {
+  display: flex;
+  gap: 62px;
+} 
+
+.nav-desktop a {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.nav-desktop a:hover {
+  opacity: 1;
+}
+
+header {
+  padding: 50px;
+}
+
+.title-square {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+.title {
+  padding-top: 20px;
+}
+
+.title h1 {
+  margin: 20px 0 10px 0;
+}
+
+.title h4 {
+  display: contents;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  width: 407px;
+}
+
+#home {
+  overflow: hidden;
+  height:580px;
+}
+
+.karamelo {
+  display: grid;
+  grid-template-areas: 
+  'A B'
+  'C B'
+  'D E';
+
+  position: relative;
+  bottom: -40px;
+  left: 200px;
+}
+
+.karamelo :nth-child(4).square,
+.karamelo :nth-child(5).square {
+  display: block;
+}
+
+.karamelo :nth-child(1).square {
+  grid-area: B;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+}
+
+.karamelo :nth-child(2) {
+  grid-area: A;
+}
+
+.square button {
+  transform: translateY(-40px);
+}
+
+.karamelo :nth-child(3) {
+  grid-area: C;
+  border-radius: 20px;
+  height: 110px;
+}
+
+.karamelo :nth-child(4) {
+  grid-area: D;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.karamelo :nth-child(5) {
+  grid-area: E;
+  border-radius: 2rem 0 0 0;
+}
+
+
+.menu-itens-desktop {
+  display: contents;
+
+}
+
+
+/* *************** SECTION ABOUT *************** */
+
+.animals {
+  grid-template-areas:
+  'A B'
+  'C C';
+  gap: 32px;
+}
+
+.box {
+  width: 100%;
+}
+
+.box-app {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
+  margin: 0 50px;;
+
+}
+
+.app {
+  border-radius: 20px;
+  align-self: center;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+.animals:nth-child(1) {
+    grid-area: A;
+}
+
+.animals:nth-child(2) {
+    grid-area: B;
+}
+
+.animals :nth-child(3) {
+  grid-area: C;
+  max-width: 100%;
+}
+
+.app {
+  border-radius: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#about img {
+  transform: none;
+}
+
+.app img:first-child {
+  display: none;
+}
+
+.app img:nth-child(2) {
+  position: inherit;
+  top: 25%;
+  z-index: 3;
+  width: 110%;
+}
+
+.app img:nth-child(3) {
+  position: absolute;
+  opacity: 0.6;
+  z-index: 2;
+  width: 95%;
+}
+
+.app img:last-child {
+  position: inherit;
+  z-index: 1;
+  opacity: 0.3;
+  width: 80%;
+  bottom: 20%;
+}

@@ -15,70 +15,117 @@
 
   <title>FindAFriend</title>
 
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/mobile.css">
+  <link rel="stylesheet" href="/css/desktop.css">
 
 </head>
 <body>
   <section id="home">
     <header>
       <img class="logo" src="./assets/icons/logo2.svg" alt="Logo do FindAFriend">
-      <img src="./assets/icons/menu.svg" alt="Menu">
+
+      <nav class="nav-desktop">
+        <ul class="menu-itens-desktop element-hidden">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">Sobre o app</a></li>
+          <li><a href="#pets">Animais disponíveis</a></li>
+          <li><a href="#">Sobre a FindAFriend</a></li>
+          <li><a href="#">Contato</a></li>
+      </ul>
+      </nav>
+
+      <div class="btn-menu">
+        <span href="#" class="menu-open" onclick="clickMenu()">
+          <img src="./assets/icons/open_menu.svg" alt="Ícone de abrir Menu">
+        </span>
+
+        <span href="#" class="menu-closed element-hidden" onclick="clickMenu()">
+          <img src="./assets/icons/closed_menu.svg" alt="Ícone de fechar Menu">
+        </span>
+
+      </div>
     </header>
 
-    <div class="title">
-      <div class="friends">
-        <img src="./assets/images/friend1.svg" alt="">
-        <img src="./assets/images/friend2.svg" alt="">
-        <img src="./assets/images/friend3.svg" alt="">
-        <img src="./assets/images/friend4.svg" alt="">
-      </div>
-      <span><strong>324 amigos</strong> na sua cidade</span>
-
-      <h1>Leve a felicidade para o seu lar</h1>
+    
+    <div class="menu-mobile element-hidden">
+        <ul class="menu-itens-mobile">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">Sobre o app</a></li>
+            <li><a href="#pets">Animais disponíveis</a></li>
+            <li><a href="#">Sobre a FindAFriend</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
     </div>
 
-    <div class="karamelo">
-      <div class="square"></div>
-      <div class="square">
-        <img src="./assets//images/dog.png" class="dog" alt="">
-        <a href="#">Acesse agora</a>
+    <div class="title-square">
+      <div class="title">
+        <div class="friends">
+          <img src="./assets/images/friend1.svg" alt="">
+          <img src="./assets/images/friend2.svg" alt="">
+          <img src="./assets/images/friend3.svg" alt="">
+          <img src="./assets/images/friend4.svg" alt="">
+        </div>
+        <span><strong>324 amigos</strong> na sua cidade</span>
+  
+        <h1>Leve a felicidade para o seu lar</h1>
+        <h4 class="">Encontre o animal de estimação ideal para seu estilo de vida!</h4>
       </div>
-      <div class="square"></div>
+  
+      <div class="karamelo">
+        <div class="square"></div>
+        <div class="square">
+          <img src="./assets//images/dog.png" class="dog" alt="">
+          <button href="#">Acesse agora</button>
+        </div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+
+      </div>
+
     </div>
+
   </section>
 
-  <section id="box-friends">
-    <h2>Um app não, uma caixinha de amigos...</h2>
-    <div class="animals">
-      <div class="box">
-        <span>🐕</span>
-        <p>O <strong>FindAFriend</strong> é um produto desenvolvido para você encontrar
-          o animal de estimação ideal ao seu estilo de vida!</p>
+  <section id="about">
+    <div class="box-app">
+      <div class="text-box">
+        <h2>Um app não, uma caixinha de amigos...</h2>
+        <div class="animals">
+          <div class="box">
+            <span>🐕</span>
+            <p>O <strong>FindAFriend</strong> é um produto desenvolvido para você encontrar
+              o animal de estimação ideal ao seu estilo de vida!</p>
+          </div>
+    
+          <div class="box">
+            <span>🐈</span>
+            <p><strong>ONGs</strong> cadastram os bichinhos disponíveis 
+              para adoção informando características como: porte, nível 
+              de energia, nível de independência, sociabilidade e gênero.</p>
+          </div>
+    
+          <div class="box">
+            <span>🦮</span> 
+            <p><strong>Filtre os bichinhos</strong> de acordo com suas preferências e lifestyle. 
+              Depois é só entrar em contato com a ONG para agendar 
+              uma visita e conhecer pessoalmente <strong>match perfeito!</strong></p>
+          </div>
+        </div>
       </div>
-
-      <div class="box">
-        <span>🐈</span>
-        <p><strong>ONGs</strong> cadastram os bichinhos disponíveis 
-          para adoção informando características como: porte, nível 
-          de energia, nível de independência, sociabilidade e gênero.</p>
-      </div>
-
-      <div class="box">
-        <span>🦮</span> 
-        <p><strong>Filtre os bichinhos</strong> de acordo com suas preferências e lifestyle. 
-          Depois é só entrar em contato com a ONG para agendar 
-          uma visita e conhecer pessoalmente <strong>match perfeito!</strong></p>
+  
+      <div class="app">
+        <img src="./assets/images/mobile-app.svg">
+        <img src="./assets/images/app.svg">
+        <img src="./assets/images/app.svg">
+        <img src="./assets/images/app.svg">
       </div>
     </div>
 
-    <div class="app">
-      <img src="./assets/images/app.svg">
-      <img src="./assets/images/app.svg">
-      <img src="./assets/images/app.svg">
-    </div>
   </section>
 
-  <section id="carousel-box">
+  <section id="pets">
 
     <div class="container-carousel">
 
@@ -91,7 +138,7 @@
           de vida e necessidades.</span>
       </div>
   
-      <a href="#">Acesse agora</a>
+      <button href="#">Acesse agora</button>
   
       <div class="swiper">
 

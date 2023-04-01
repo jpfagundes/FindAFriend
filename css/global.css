@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --webkit-font-smothing: antialiased;
+  --moz-osx-font-smothing: grayscale;
+
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.element-hidden {
+  display: none;
+}
