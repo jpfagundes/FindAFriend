@@ -1,4 +1,4 @@
-@media (min-width: 800px) {
+@media (min-width: 900px) {
 
 .btn-menu {
   display: none;
@@ -39,6 +39,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-left: 40px;
+  gap: 50px;
 }
 
 .title {
@@ -71,7 +72,6 @@ header {
 
   position: relative;
   bottom: -40px;
-  left: 200px;
 }
 
 .karamelo :nth-child(4).square,
@@ -83,10 +83,12 @@ header {
   grid-area: B;
   height: 100%;
   border-radius: 20px 0 0 20px;
+  transform: translateX(78%)
 }
 
 .karamelo :nth-child(2) {
   grid-area: A;
+  width: 180%;
 }
 
 .karamelo .dog {
@@ -100,6 +102,7 @@ header {
   transform: translateY(-40px);
   cursor: pointer;
   transition: filter 0.2s;
+  width: 80% !important;
 }
 
 .square button:hover {
@@ -110,20 +113,20 @@ header {
 .karamelo :nth-child(3) {
   grid-area: C;
   height: 110px;
-  width: 100%;
-}
-.karamelo .square:nth-child(3) {
+  width: 180%;
   border-radius: 20px !important;
 }
+
 .karamelo :nth-child(4) {
   grid-area: D;
   border-radius: 20px 20px 0 0;
-  width: 100%;
+  width: 180%;
 }
 
 .karamelo :nth-child(5) {
   grid-area: E;
   border-radius: 20px;
+  transform: translateX(78%)
 }
 
 
