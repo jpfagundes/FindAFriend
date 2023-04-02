@@ -12,14 +12,27 @@
 .nav-desktop a {
   color: #fff;
   opacity: 0.5;
+  font-size: 18px;
+  transition: 0.2s;
 }
 
 .nav-desktop a:hover {
   opacity: 1;
+
 }
 
 header {
   padding: 50px;
+  background-color: #F15156;
+}
+
+.friends {
+  align-items: center;
+  flex-direction: row;
+}
+
+.avatars {
+  display: inline-flex;
 }
 
 .title-square {
@@ -46,7 +59,7 @@ header {
 
 #home {
   overflow: hidden;
-  height:580px;
+  height:640px;
 }
 
 .karamelo {
@@ -76,24 +89,41 @@ header {
   grid-area: A;
 }
 
+.karamelo .dog {
+ position: relative;
+ left: 50%;
+ transform: translate(-50%, -77px);
+}
+
+
 .square button {
   transform: translateY(-40px);
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.square button:hover {
+  filter: brightness(0.9);
+
 }
 
 .karamelo :nth-child(3) {
   grid-area: C;
-  border-radius: 20px;
   height: 110px;
+  width: 100%;
 }
-
+.karamelo .square:nth-child(3) {
+  border-radius: 20px !important;
+}
 .karamelo :nth-child(4) {
   grid-area: D;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
 }
 
 .karamelo :nth-child(5) {
   grid-area: E;
-  border-radius: 2rem 0 0 0;
+  border-radius: 20px;
 }
 
 

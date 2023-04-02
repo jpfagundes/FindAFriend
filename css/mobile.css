@@ -39,7 +39,11 @@ header {
 .menu-mobile a {
   color: #fff;
   text-decoration: none;
+}
 
+.friends {
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
@@ -60,7 +64,7 @@ header {
 }
 
 .title h1 {
-  margin: 35px 0 60px 0;  color: #FFF;
+  margin: 20px 0 60px 0;  color: #FFF;
   font-size: 44px;
   max-width: 280px;
 }
@@ -83,11 +87,6 @@ h4 {
 }
 .karamelo .square:nth-child(3) {
   border-radius: 20px 0 0 20px
-}
-@media (min-width: 900px) {
-  .karamelo .square:nth-child(3) {
-    border-radius: 20px
-  }
 }
 
 .karamelo .square:nth-child(4),
@@ -127,7 +126,7 @@ button {
   width: 239px;
 }
 
-/* *************** SECTION BOX FRIENDS*************** */
+/* *************** SECTION ABOUT *************** */
 
 #about {
   display: flex;

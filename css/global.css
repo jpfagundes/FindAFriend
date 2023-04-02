@@ -9,6 +9,10 @@
   list-style-type: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .element-hidden {
   display: none;
 }
