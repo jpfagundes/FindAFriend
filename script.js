@@ -13,27 +13,15 @@ function clickMenu() {
 }
 
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
+const rootNode = document.querySelector('.embla')
+const viewportNode = rootNode.querySelector('.embla-viewport')
+const options = { loop: true }
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
-  },
+const embla = EmblaCarousel(viewportNode, options)
 
-  mousewheel: true,
-  keyboard: true,
-  
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+const prevButtonNode = rootNode.querySelector('.embla-prev')
+const nextButtonNode = rootNode.querySelector('.embla-next')
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+
+prevButtonNode.addEventListener('click', embla.scrollPrev, true)
+nextButtonNode.addEventListener('click', embla.scrollNext, true)

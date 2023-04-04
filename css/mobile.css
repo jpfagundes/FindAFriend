@@ -210,28 +210,17 @@ p {
   border-radius: 20px;
 }
 
-#pets span {
-  color: #fff;
-  margin: 40px 0 20px 0;
-
-}
-
-#pets .swiper {
-  overflow: initial;
-  touch-action: pan-y;
-}
-
-#pets .swiper-wrapper {
-  display: flex;
-  gap: 10px;
-}
-
 h3 {
   font-size: 30px;
   font-weight:700;
   color: #F4D35E;
   margin-bottom: 40px;
   text-align: center;
+}
+
+#pets span {
+  color: #fff;
+  margin: 40px 0 20px 0;
 
 }
 
@@ -240,20 +229,42 @@ h3 {
   width: -webkit-fill-available;
 }
 
-.swiper-slide {
-  min-height: 174px;
-  border-radius: 18px;
-  background: #fff;
+.embla {
+  overflow: initial;
 }
 
+.embla-container {
+  display: flex;
+  gap: 10px;
+}
+
+.embla-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  max-width: 256px;
+  min-height: 174px;
+  cursor: grab;
+  background-color: #fff;
+  border-radius: 18px;
+}
+
+.embla-slide:active {
+  cursor: grabbing;
+}
 
 #pets img {
-  width: inherit;
+  width: 100%;
 }
 
 #pets p {
   font-size: 16px;
   color: #0D3B66;
   text-align: center;
+  margin-top: 10px;
 
+} 
+
+.embla-prev,
+.embla-next {
+  display: none;
 }

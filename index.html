@@ -11,10 +11,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="shortcut icon" href="./assets/icons/logo.svg" type="image/x-icon">
 
   <title>FindAFriend</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="/css/mobile.css">
   <link rel="stylesheet" href="/css/desktop.css">
@@ -134,46 +136,61 @@
 
       <div class="texts">
         <h3>Há muitos amigos esperando por você!</h3>
-        <span>O FiendAFriend conecta pessoas que estão procurando
+        <span>O FindAFriend conecta pessoas que estão procurando
           por um animal de estimação com animais que precisam de um
           lar amoroso. É fácil de usar e você pode navegar por uma variedade
           de animais para encontrar aquele que melhor se adapta ao seu estilo 
           de vida e necessidades.</span>
       </div>
   
+
+    <div class="button-carousel">
       <button href="#">Acesse agora</button>
-  
-      <div class="swiper">
 
-        <div class="swiper-wrapper">
+      <div class="embla">
+        <button class="embla-prev">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
 
-          <div class="swiper-slide">
-            <img src="./assets/images/hamilton.png" alt="">
-            <p>Hamilton</p>
+          <div class="embla-viewport">
+            <div class="embla-container">
+              <div class="embla-slide">
+                <img src="./assets/images/hamilton.png" alt="">
+                <p>Hamilton</p>
+              </div>
+              
+              <div class="embla-slide">
+                <img src="./assets/images/cleiton.png" alt="">
+                <p>Cleiton</p>
+              </div>
+              
+              <div class="embla-slide">
+                <img src="./assets/images/aldo.png" alt="">
+                <p>Aldo</p>
+              </div>
+              
+            </div>
           </div>
 
-          <div class="swiper-slide">
-            <img src="./assets/images/cleiton.png" alt="">
-            <p>Cleiton</p>
-          </div>
+        <button class="embla-next"> 
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 6L15 12L9 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
 
-          <div class="swiper-slide">
-            <img src="./assets/images/aldo.png" alt="">
-            <p>Aldo</p>
-          </div>
-          
-          <div class="swiper-pagination"></div>
-        </div>
-  
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-  
       </div>
+        
     </div>
+  
+    </div>
+
+    </div>
+
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
   <script src="./script.js" ></script>
 
 </body>
