@@ -15,7 +15,11 @@ function clickMenu() {
 
 const rootNode = document.querySelector('.embla')
 const viewportNode = rootNode.querySelector('.embla-viewport')
-const options = { loop: true }
+const options = {
+   loop: {
+    '(min-width: 900px)': true,
+   } 
+  }
 
 const embla = EmblaCarousel(viewportNode, options)
 
