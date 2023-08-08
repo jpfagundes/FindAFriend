@@ -189,7 +189,7 @@ p {
   width: 100%;
 } 
 
-@media(max-width: 900px) {
+@media(max-width: 767px) {
   .app :nth-child(2),
   .app :nth-child(3),
   .app :last-child {
@@ -224,7 +224,7 @@ h3 {
 
 }
 
-#pets button {
+#pets button{
   margin: 20px auto 30px auto;
   width: -webkit-fill-available;
 }
@@ -268,3 +268,107 @@ h3 {
 .embla-next {
   display: none;
 }
+
+/* *************** SECTION CREW *************** */
+
+#crew {
+  overflow: hidden;
+  padding: 20px;
+}
+
+#crew .embla-container {
+  display: flex;
+  gap: 20px;
+}
+
+#crew .embla-slide {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #FDECED;
+  padding: 10px 10px 0 10px;
+  border: 1px solid rgba(241, 81, 86, 0.30);
+}
+
+
+#crew h3 {
+  color: #0D3B66;
+  font-size: 18px;
+  margin: 20px 0 5px 0
+}
+
+#crew span {
+  color: #0D3B66;
+  font-size: 18px;
+  margin-bottom: 20px;
+
+}
+
+.contact {
+  background: #0D3B66;
+  border-radius: 10px;
+  margin-top: 50px;
+  overflow: hidden;
+  
+}
+
+.images {
+  width: 108.188px;
+  height: 146.542px;
+  display: flex
+}
+
+.images img:nth-child(1) {
+  width: 200%;
+  transform: translate(10px, -43px);
+  
+}
+
+.images img:nth-child(2) {
+  transform: translate(-92px, -22px);
+  width: 160%;
+}
+
+.text-contact {
+  margin-left: 30px;
+}
+
+.contact h2 {
+  margin: 0;
+  text-align: initial;
+  color: #FFF;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 70px 0;
+}
+
+.contact p {
+  color: #F4D35E;
+  margin: 0 5px;
+}
+
+/* *************** FOOTER *************** */
+
+
+footer {
+  background: #E44449;
+  height: 190px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  margin-top: 15px;
+
+}
+
+  footer span {
+    color: #fff;
+    font-size: 14px
+  }
